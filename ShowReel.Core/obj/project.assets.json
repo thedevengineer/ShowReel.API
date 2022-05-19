@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.lib\\ShowReel.Lib.csproj",
-      "projectName": "ShowReel.Lib",
-      "projectPath": "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.lib\\ShowReel.Lib.csproj",
+      "projectUniqueName": "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Core\\ShowReel.Core.csproj",
+      "projectName": "ShowReel.Core",
+      "projectPath": "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Core\\ShowReel.Core.csproj",
       "packagesPath": "C:\\Users\\mrkrm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.lib\\obj\\",
+      "outputPath": "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

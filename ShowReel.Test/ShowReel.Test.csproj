@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ShowReel.lib\ShowReel.Lib.csproj" />
+    <ProjectReference Include="..\ShowReel.Core\ShowReel.Core.csproj" />
   </ItemGroup>
 
 </Project>

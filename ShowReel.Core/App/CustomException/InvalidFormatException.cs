@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShowReel.Lib.Infra
+namespace ShowReel.Core.App.CustomException
 {
     public class InvalidFormatException : Exception
     {

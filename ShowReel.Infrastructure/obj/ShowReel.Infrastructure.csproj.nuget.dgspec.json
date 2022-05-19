@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Test\\ShowReel.Test.csproj": {}
+    "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Infrastructure\\ShowReel.Infrastructure.csproj": {}
   },
   "projects": {
     "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Core\\ShowReel.Core.csproj": {
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Test\\ShowReel.Test.csproj": {
+    "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Infrastructure\\ShowReel.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Test\\ShowReel.Test.csproj",
-        "projectName": "ShowReel.Test",
-        "projectPath": "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Test\\ShowReel.Test.csproj",
+        "projectUniqueName": "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Infrastructure\\ShowReel.Infrastructure.csproj",
+        "projectName": "ShowReel.Infrastructure",
+        "projectPath": "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Infrastructure\\ShowReel.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\mrkrm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Test\\obj\\",
+        "outputPath": "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -106,25 +106,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.NET.Test.Sdk": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[16.11.0, )"
-            },
-            "coverlet.collector": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.1.0, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.runner.visualstudio": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.4.3, )"
+              "version": "[6.0.5, )"
             }
           },
           "imports": [

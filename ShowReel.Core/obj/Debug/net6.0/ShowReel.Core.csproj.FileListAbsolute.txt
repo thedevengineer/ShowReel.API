@@ -1,0 +1,12 @@
+C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Core\bin\Debug\net6.0\ShowReel.Core.deps.json
+C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Core\bin\Debug\net6.0\ShowReel.Core.dll
+C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Core\bin\Debug\net6.0\ref\ShowReel.Core.dll
+C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Core\bin\Debug\net6.0\ShowReel.Core.pdb
+C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Core\obj\Debug\net6.0\ShowReel.Core.csproj.AssemblyReference.cache
+C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Core\obj\Debug\net6.0\ShowReel.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Core\obj\Debug\net6.0\ShowReel.Core.AssemblyInfoInputs.cache
+C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Core\obj\Debug\net6.0\ShowReel.Core.AssemblyInfo.cs
+C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Core\obj\Debug\net6.0\ShowReel.Core.csproj.CoreCompileInputs.cache
+C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Core\obj\Debug\net6.0\ShowReel.Core.dll
+C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Core\obj\Debug\net6.0\ref\ShowReel.Core.dll
+C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Core\obj\Debug\net6.0\ShowReel.Core.pdb

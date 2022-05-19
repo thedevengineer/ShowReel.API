@@ -1,5 +1,5 @@
-using ShowReel.Lib.Domain;
-using ShowReel.Lib.Infra;
+using ShowReel.Core.Domain;
+using ShowReel.Core.App.CustomException;
 using Xunit;
 
 namespace ShowReel.Test

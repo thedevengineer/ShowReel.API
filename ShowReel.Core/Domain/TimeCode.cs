@@ -1,4 +1,4 @@
-﻿using ShowReel.Lib.Infra;
+﻿using ShowReel.Core.App.CustomException;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace ShowReel.Lib.Domain
+namespace ShowReel.Core.Domain
 {
     public  class TimeCode
     {

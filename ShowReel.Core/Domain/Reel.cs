@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShowReel.Lib.Domain
+namespace ShowReel.Core.Domain
 {
     public class Reel
     {

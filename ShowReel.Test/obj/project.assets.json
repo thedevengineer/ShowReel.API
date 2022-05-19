@@ -1671,14 +1671,14 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
-      "ShowReel.Lib/1.0.0": {
+      "ShowReel.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/ShowReel.Lib.dll": {}
+          "bin/placeholder/ShowReel.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ShowReel.Lib.dll": {}
+          "bin/placeholder/ShowReel.Core.dll": {}
         }
       }
     }
@@ -5973,16 +5973,16 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "ShowReel.Lib/1.0.0": {
+    "ShowReel.Core/1.0.0": {
       "type": "project",
-      "path": "../ShowReel.lib/ShowReel.Lib.csproj",
-      "msbuildProject": "../ShowReel.lib/ShowReel.Lib.csproj"
+      "path": "../ShowReel.Core/ShowReel.Core.csproj",
+      "msbuildProject": "../ShowReel.Core/ShowReel.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.NET.Test.Sdk >= 16.11.0",
-      "ShowReel.Lib >= 1.0.0",
+      "ShowReel.Core >= 1.0.0",
       "coverlet.collector >= 3.1.0",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
@@ -6020,8 +6020,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.lib\\ShowReel.Lib.csproj": {
-              "projectPath": "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.lib\\ShowReel.Lib.csproj"
+            "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Core\\ShowReel.Core.csproj": {
+              "projectPath": "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Core\\ShowReel.Core.csproj"
             }
           }
         }
