@@ -88,8 +88,6 @@ C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\bin\Debug\
 C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\bin\Debug\net6.0\ShowReel.Lib.dll
-C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\bin\Debug\net6.0\ShowReel.Lib.pdb
 C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\obj\Debug\net6.0\ShowReel.Test.csproj.AssemblyReference.cache
 C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\obj\Debug\net6.0\ShowReel.Test.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\obj\Debug\net6.0\ShowReel.Test.AssemblyInfoInputs.cache
@@ -100,3 +98,6 @@ C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\obj\Debug\
 C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\obj\Debug\net6.0\ref\ShowReel.Test.dll
 C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\obj\Debug\net6.0\ShowReel.Test.pdb
 C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\obj\Debug\net6.0\ShowReel.Test.genruntimeconfig.cache
+C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\bin\Debug\net6.0\ShowReel.Core.dll
+C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\bin\Debug\net6.0\ShowReel.Core.pdb
+C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll

@@ -7,14 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ShowReel.Core\ShowReel.Core.csproj" />
   </ItemGroup>
 

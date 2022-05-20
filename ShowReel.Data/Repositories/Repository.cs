@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using ShowReel.Core.Repositories;
 using System.Linq.Expressions;
 
-namespace ShowReel.Infrastructure
+namespace ShowReel.Data
 {
     public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : class 
     {

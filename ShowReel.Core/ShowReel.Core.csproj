@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="App\" />
+    <None Remove="Domain\TimeCode.cs~RF1a875c32.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="6.0.5" />
   </ItemGroup>
 
 </Project>

@@ -1,34 +1,36 @@
 ﻿using ShowReel.Core.App.CustomException;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
-namespace ShowReel.Core.Domain
+namespace ShowReel.Core.App.Services
 {
-    public  class TimeCode
+    public  class TimeCode 
     {
-        public int Hours { get; private set; }
-        public int Minutes { get; private set; }
-        public int Seccods { get; private set; }
-        public int Frames { get; private set; }
+        public int Hours { get;  set; }
+        public int Minutes { get;  set; }
+        public int Seccods { get;  set; }
+        public int Frames { get;  set; }
 
+
+
+
+        protected TimeCode()
+        {
+
+        }
         public TimeCode(string time)
         {
             if (Validate(time))
             {
-                var t  = time.Split(':');
+                var t = time.Split(':');
 
-                this.Hours   = Convert.ToInt32(t[0]);
+                this.Hours = Convert.ToInt32(t[0]);
                 this.Minutes = Convert.ToInt32(t[1]);
                 this.Seccods = Convert.ToInt32(t[2]);
-                this.Frames  = Convert.ToInt32(t[3]);
+                this.Frames = Convert.ToInt32(t[3]);
             }
             else
                 throw new InvalidFormatException("Input is not a valid timecode");
-            
+
         }
 
 

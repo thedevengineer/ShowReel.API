@@ -1,4 +1,4 @@
-using ShowReel.Core.Domain;
+using ShowReel.Core.App.Services;
 using ShowReel.Core.App.CustomException;
 using Xunit;
 

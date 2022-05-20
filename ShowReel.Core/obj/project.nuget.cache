@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KUGqcCRj/UlxgKt6918l2KQDLb92iBrMyDWVmzJezFBmQriTBo4Hjl8rZ9TRJihWm8SitSGAtlagEkyK/zC86w==",
+  "dgSpecHash": "qWJ8egHw1HF76I44TKlpzvgJ56Q5D3otqYUXQgZTAQDyd9SysITn2ld+O3NWjAhJZVf5isZze0EZBpbN/fgzbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mrkrm\\OneDrive\\Documents\\Projects\\ShowReel.API\\ShowReel.Core\\ShowReel.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mrkrm\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.5\\microsoft.entityframeworkcore.abstractions.6.0.5.nupkg.sha512"
+  ],
   "logs": []
 }
