@@ -1,4 +1,5 @@
-﻿using ShowReel.Core.Domain;
+﻿using ShowReel.Core.App.CustomException;
+using ShowReel.Core.Domain;
 using ShowReel.Core.Repositories;
 using System;
 using System.Collections.Generic;
@@ -13,5 +14,6 @@ namespace ShowReel.Data.Repositories
         public ReelRepository(ShowReelDbContext context): base(context)
         {
         }
+
     }
 }

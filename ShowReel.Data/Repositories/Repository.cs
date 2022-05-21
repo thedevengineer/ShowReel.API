@@ -14,12 +14,12 @@ namespace ShowReel.Data
             Context = context;  
         }
 
-        public void Add(TEntity entity)
+        public virtual void Add(TEntity entity)
         {
             Context.Set<TEntity>().Add(entity);
         }
 
-        public void AddRange(IEnumerable<TEntity> entities)
+        public virtual void AddRange(IEnumerable<TEntity> entities)
         {
             Context.Set<TEntity>().AddRange(entities);
         }

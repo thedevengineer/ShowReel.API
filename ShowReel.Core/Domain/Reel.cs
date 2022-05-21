@@ -11,25 +11,30 @@ namespace ShowReel.Core.Domain
     {
         public string Name { get; private set; }
         public string Description { get; private set; }
-        public string VideoStandard { get; private set; }
-        public string VideoDefinition { get; private set; }
         public string Duration { get; private set; }
-        public IEnumerable<Session> SessionCollection { get; private set; }
 
-        public Reel(string name, string description, string videoStandard, string videoDefinition, string duration, int id = -1)
+        public int VideoQualityId { get; set; }
+        public VideoQuality VideoQuality { get; private set; }
+
+
+        public Reel(string name, string description, VideoQuality videoQuality, string duration, int id)
         {
             this.Id              = id;
             this.Name            = name;
             this.Description     = description;
-            this.VideoStandard   = videoStandard;
-            this.VideoDefinition = videoDefinition;
             this.Duration        = duration;
+            this.VideoQuality    = videoQuality;
 
         }
-        protected Reel()
+
+        public Reel(string name, string description,string duration, int videoQualityId, int id)
         {
-        }
+            this.Id             = id;
+            this.Name           = name;
+            this.Description    = description;
+            this.Duration       = duration;
+            this.VideoQualityId = videoQualityId;
 
-       
+        }
     }
 }
