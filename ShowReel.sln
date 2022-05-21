@@ -5,13 +5,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShowReel.RestService", "ShowReel.RestService\ShowReel.RestService.csproj", "{F12857C4-6EDE-4E73-A3E5-C4D662F8FD93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowReel.Test", "ShowReel.Test\ShowReel.Test.csproj", "{4D152D54-61E7-4754-B085-081B75A80BD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShowReel.Test", "ShowReel.Test\ShowReel.Test.csproj", "{4D152D54-61E7-4754-B085-081B75A80BD8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShowReel.Core", "ShowReel.Core\ShowReel.Core.csproj", "{FB33C015-0DDD-4EBB-B9CE-9CA2E8CB37CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowReel.Data", "ShowReel.Data\ShowReel.Data.csproj", "{88222E79-4FFF-4EE0-9A83-3F46DCCD2030}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShowReel.Data", "ShowReel.Data\ShowReel.Data.csproj", "{88222E79-4FFF-4EE0-9A83-3F46DCCD2030}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShowReel.Logic", "ShowReel.Logic\ShowReel.Logic.csproj", "{955B09F9-A66C-4811-BDB4-A7EF15153EE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShowReel.Orchestration", "ShowReel.Orchestration\ShowReel.Orchestration.csproj", "{104BA787-51D6-4EE0-9E9F-271A1343BC19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{88222E79-4FFF-4EE0-9A83-3F46DCCD2030}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88222E79-4FFF-4EE0-9A83-3F46DCCD2030}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88222E79-4FFF-4EE0-9A83-3F46DCCD2030}.Release|Any CPU.Build.0 = Release|Any CPU
-		{955B09F9-A66C-4811-BDB4-A7EF15153EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{955B09F9-A66C-4811-BDB4-A7EF15153EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{955B09F9-A66C-4811-BDB4-A7EF15153EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{955B09F9-A66C-4811-BDB4-A7EF15153EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{104BA787-51D6-4EE0-9E9F-271A1343BC19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104BA787-51D6-4EE0-9E9F-271A1343BC19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104BA787-51D6-4EE0-9E9F-271A1343BC19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104BA787-51D6-4EE0-9E9F-271A1343BC19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

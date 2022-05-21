@@ -1,5 +1,4 @@
-﻿using ShowReel.Core.App.CustomException;
-using ShowReel.Core.Domain;
+﻿using ShowReel.Core.Domain;
 using ShowReel.Core.Repositories;
 using System;
 using System.Collections.Generic;
@@ -9,11 +8,10 @@ using System.Threading.Tasks;
 
 namespace ShowReel.Data.Repositories
 {
-    internal class ReelRepository: BaseRepository<Reel>, IRepository<Reel>
+    internal class VideoQualityRepository : BaseRepository<VideoQuality>, IRepository<VideoQuality>
     {
-        public ReelRepository(ShowReelDbContext context): base(context)
+        public VideoQualityRepository(ShowReelDbContext context): base(context)
         {
         }
-
     }
 }

@@ -5,11 +5,11 @@ using System.Linq.Expressions;
 
 namespace ShowReel.Data
 {
-    public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : class 
+    public abstract class BaseRepository<TEntity> : IRepository<TEntity> where TEntity : class 
     {
         protected readonly DbContext Context;
 
-        public Repository(DbContext context)
+        public BaseRepository(DbContext context)
         {
             Context = context;  
         }
