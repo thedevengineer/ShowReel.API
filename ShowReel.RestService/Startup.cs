@@ -17,10 +17,9 @@ namespace ShowReel.RestService
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ShowReelDbContext>(options => options.UseSqlite("Filename=ShowReelDb.db;"));
-            //services.AddDbContext<ShowReelDbContext>(options => options.UseSqlite("Data Source=ShowReelDb.db;"));
-            //services.AddDbContext<ShowReelDbContext>(options => options.UseSqlite(@"Data Source=C:\Users\mrkrm\OneDrive\Documents\Projects\ShowReel.API\ShowReel.Data\ShowReelDb.db;"));
+            services.AddDbContext<ShowReelDbContext>(options => options.UseSqlite("Data Source=./ShowReelDb.db;"));
             services.AddScoped<IReelRepository, ReelRepository>();
+            services.AddScoped<IVideoQualityRepository, VideoQualityRepository>();
 
             services.AddControllers();
             services.AddEndpointsApiExplorer();

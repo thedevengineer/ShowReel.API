@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ShowReel.Data.Repositories
 {
-    internal class VideoQualityRepository : BaseRepository<VideoQuality>, IRepository<VideoQuality>
+    public class VideoQualityRepository : BaseRepository<VideoQuality>, IVideoQualityRepository
     {
         public VideoQualityRepository(ShowReelDbContext context): base(context)
         {
