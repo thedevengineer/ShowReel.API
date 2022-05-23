@@ -23,4 +23,10 @@
     <ProjectReference Include="..\ShowReel.Core\ShowReel.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="ShowReelDb.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

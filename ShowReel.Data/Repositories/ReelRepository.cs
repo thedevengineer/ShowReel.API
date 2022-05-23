@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ShowReel.Data.Repositories
 {
-    internal class ReelRepository: BaseRepository<Reel>, IRepository<Reel>
+    public class ReelRepository: BaseRepository<Reel>, IReelRepository
     {
         public ReelRepository(ShowReelDbContext context): base(context)
         {
