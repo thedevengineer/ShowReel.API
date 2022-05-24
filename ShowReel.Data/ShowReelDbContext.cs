@@ -14,17 +14,21 @@ namespace ShowReel.Data
         {
         }
 
+        protected ShowReelDbContext(DbContextOptions options) : base(options)
+        {
+        }
+
         protected DbSet<Reel> Reels { get; set; }
 
         protected DbSet<VideoQuality> VideoQualities { get; set; }
 
-        
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlite("Data Source=ShowReelDb.db;");
-            optionsBuilder.EnableSensitiveDataLogging();
-        }
-        
+
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer(@"Server=tcp:app-collection.database.windows.net,1433;Initial Catalog=ShowReelDb;Persist Security Info=False;User ID=mrkrmrez;Password={password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+        //    optionsBuilder.EnableSensitiveDataLogging();
+        //}
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Reel>().ToTable("Reels")
