@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace ShowReel.Data.Repositories
 {
-    public class ReelRepository: BaseRepository<Reel>, IReelRepository
+    public class ClipRepository: BaseRepository<Clip>, IClipRepository
     {
-        public ReelRepository(ShowReelDbContext context): base(context)
+        public ClipRepository(ShowReelDbContext context): base(context)
         {
         }
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShowReel.Core.Repositories
 {
-    public interface IReelRepository : IRepository<Reel>
+    public interface IClipRepository : IRepository<Clip>
     {
     }
 }

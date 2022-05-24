@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShowReel.Core.Domain
 {
-    public class Reel : BaseEntity
+    public class Clip : BaseEntity
     {
         public string Name { get; private set; }
         public string Description { get; private set; }
@@ -17,7 +17,7 @@ namespace ShowReel.Core.Domain
         public VideoQuality VideoQuality { get; private set; }
 
 
-        public Reel(string name, string description, VideoQuality videoQuality, string duration, int id)
+        public Clip(string name, string description, VideoQuality videoQuality, string duration, int id)
         {
             this.Id              = id;
             this.Name            = name;
@@ -27,7 +27,7 @@ namespace ShowReel.Core.Domain
 
         }
 
-        public Reel(string name, string description,string duration, int videoQualityId, int id)
+        public Clip(string name, string description,string duration, int videoQualityId, int id)
         {
             this.Id             = id;
             this.Name           = name;

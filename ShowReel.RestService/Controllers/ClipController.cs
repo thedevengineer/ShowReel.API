@@ -7,12 +7,12 @@ namespace ShowReel.RestService.Controllers
 
     [ApiController]
     [Route("api/[controller]")]
-    public class ReelController : Controller
+    public class ClipController : Controller
     {
-        private readonly IReelRepository _reelRepository;
-        public ReelController(IReelRepository reelRepository)
+        private readonly IClipRepository _clipRepository;
+        public ClipController(IClipRepository clipRepository)
         {
-            this._reelRepository = reelRepository;
+            this._clipRepository = clipRepository;
         }
 
         [HttpGet]
@@ -20,7 +20,7 @@ namespace ShowReel.RestService.Controllers
         {
             try
             {
-                var result = this._reelRepository.GetAll();
+                var result = this._clipRepository.GetAll();
                 return Ok(result);
             }
             catch (Exception ex)
@@ -37,7 +37,7 @@ namespace ShowReel.RestService.Controllers
 
             try
             {
-                var result = this._reelRepository.Get(id);
+                var result = this._clipRepository.Get(id);
                 return Ok(result);
             }
             catch (Exception ex)

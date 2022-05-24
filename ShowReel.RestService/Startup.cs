@@ -17,7 +17,7 @@ namespace ShowReel.RestService
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IReelRepository, ReelRepository>();
+            services.AddScoped<IClipRepository, ClipRepository>();
             services.AddScoped<IVideoQualityRepository, VideoQualityRepository>();
 
             //Todo: move to secret

@@ -18,7 +18,7 @@ namespace ShowReel.Data
         {
         }
 
-        protected DbSet<Reel> Reels { get; set; }
+        protected DbSet<Clip> Reels { get; set; }
 
         protected DbSet<VideoQuality> VideoQualities { get; set; }
 
@@ -31,10 +31,10 @@ namespace ShowReel.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Reel>().ToTable("Reels")
+            modelBuilder.Entity<Clip>().ToTable("Clips")
                 .HasKey(e => e.Id);
 
-            modelBuilder.Entity<Reel>()
+            modelBuilder.Entity<Clip>()
                 .Property(e => e.Id)
                 .ValueGeneratedOnAdd();
 
@@ -78,8 +78,8 @@ namespace ShowReel.Data
                     )
                 );
 
-            modelBuilder.Entity<Reel>().HasData(
-                    new Reel
+            modelBuilder.Entity<Clip>().HasData(
+                    new Clip
                     (
                         id: 1,
                         name: "Bud Light",
@@ -87,7 +87,7 @@ namespace ShowReel.Data
                         duration: "00:00:30:12",
                         videoQualityId: 1
                     ),
-                    new Reel
+                    new Clip
                     (
                         id: 2,
                         name: "Audi",
@@ -95,7 +95,7 @@ namespace ShowReel.Data
                         duration: "00:01:30:00",
                         videoQualityId: 1
                     ),
-                    new Reel
+                    new Clip
                     (
                         id: 3,
                         name: "Chrysler",
@@ -104,7 +104,7 @@ namespace ShowReel.Data
                         videoQualityId: 1
                     ),
 
-                    new Reel
+                    new Clip
                     (
                         id: 4,
                         name: "M&M's",
@@ -112,7 +112,7 @@ namespace ShowReel.Data
                         duration: "00:00:15:27",
                         videoQualityId: 2
                     ),
-                    new Reel
+                    new Clip
                     (
                         id: 5,
                         name: "Fiat",
@@ -120,7 +120,7 @@ namespace ShowReel.Data
                         duration: "00:00:18:11",
                         videoQualityId: 2
                     ),
-                    new Reel
+                    new Clip
                     (
                         id: 6,
                         name: "Pepsi",
@@ -129,7 +129,7 @@ namespace ShowReel.Data
                         videoQualityId: 2
                     ),
 
-                    new Reel
+                    new Clip
                     (
                         id: 7,
                         name: "Best Buy",
@@ -137,7 +137,7 @@ namespace ShowReel.Data
                         duration: "00:00:10:05",
                         videoQualityId: 3
                     ),
-                    new Reel
+                    new Clip
                     (
                         id: 8,
                         name: "Captain America The First Avenger",
@@ -146,7 +146,7 @@ namespace ShowReel.Data
                         videoQualityId: 3
                     ),
 
-                    new Reel
+                    new Clip
                     (
                         id: 9,
                         name: "Volkswagen \"Black Beetle\"",
