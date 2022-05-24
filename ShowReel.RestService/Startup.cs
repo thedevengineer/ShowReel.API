@@ -17,9 +17,11 @@ namespace ShowReel.RestService
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ShowReelDbContext>(options => options.UseSqlite("Data Source=./ShowReelDb.db;"));
             services.AddScoped<IReelRepository, ReelRepository>();
             services.AddScoped<IVideoQualityRepository, VideoQualityRepository>();
+
+            //Todo: move to secret
+            services.AddDbContext<ShowReelDbContext>(options => options.UseSqlServer(@"Server=tcp:app-collection.database.windows.net,1433;Initial Catalog=ShowReelDb;Persist Security Info=False;User ID=mrkrmrez;Password={password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
 
             services.AddControllers();
             services.AddEndpointsApiExplorer();
