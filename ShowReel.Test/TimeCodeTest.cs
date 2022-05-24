@@ -1,6 +1,7 @@
-using ShowReel.Core.App.Services;
 using ShowReel.Core.App.CustomException;
 using Xunit;
+using ShowReel.Core.App.Models;
+using ShowReel.Core.App.Extensions;
 
 namespace ShowReel.Test
 {
@@ -10,9 +11,9 @@ namespace ShowReel.Test
         public void TimeCode__CorrectFormat__Pass()
         {
             var input = "11:23:25:22";
-            var timeCode = new TimeCode(input);
+            var timeCode = new PalTimeCode(input);
 
-            Assert.Equal(input, $"{timeCode.Hours}:{timeCode.Minutes}:{timeCode.Seccods}:{timeCode.Frames}");
+            Assert.Equal(input, $"{timeCode.Hours}:{timeCode.Minutes}:{timeCode.Seconds}:{timeCode.Frames}");
         }
 
         [Fact]
@@ -20,7 +21,7 @@ namespace ShowReel.Test
         {
             var input = " ";
 
-            Assert.Throws<InvalidFormatException>(() => new TimeCode(input));
+            Assert.Throws<InvalidFormatException>(() => new NtscTimeCode(input));
         }
 
         [Fact]
@@ -28,7 +29,8 @@ namespace ShowReel.Test
         {
             var input = "aa:bb:cc:dd";
 
-            Assert.Throws<InvalidFormatException>(() => new TimeCode(input));
+            Assert.Throws<InvalidFormatException>(() => new NtscTimeCode(input));
         }
+
     }
 }

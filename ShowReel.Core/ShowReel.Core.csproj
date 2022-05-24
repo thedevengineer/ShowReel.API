@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="App\Extensions\PalTimeCodeExtension.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Domain\TimeCode.cs~RF1a875c32.TMP" />
   </ItemGroup>
 
