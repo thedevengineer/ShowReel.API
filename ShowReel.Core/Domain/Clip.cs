@@ -16,6 +16,7 @@ namespace ShowReel.Core.Domain
         public int VideoQualityId { get; set; }
         public VideoQuality VideoQuality { get; private set; }
 
+        public  ICollection<ReelClip> ReelClips { get; private set; }
 
         public Clip(string name, string description, VideoQuality videoQuality, string duration, int id)
         {

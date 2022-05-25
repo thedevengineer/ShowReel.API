@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ShowReel.Infrastructure;
 
@@ -10,9 +11,10 @@ using ShowReel.Infrastructure;
 namespace ShowReel.Infrastructure.Migrations
 {
     [DbContext(typeof(ShowReelDbContext))]
-    partial class ShowReelDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220525163201_AddedReelClips")]
+    partial class AddedReelClips
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
