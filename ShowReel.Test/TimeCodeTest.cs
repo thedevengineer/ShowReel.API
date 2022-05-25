@@ -1,7 +1,7 @@
-using ShowReel.Core.App.CustomException;
 using Xunit;
-using ShowReel.Core.App.Models;
-using ShowReel.Core.App.Extensions;
+using ShowReel.Core.Domain;
+using ShowReel.Core.Extensions;
+using ShowReel.Core.Exceptions;
 
 namespace ShowReel.Test
 {

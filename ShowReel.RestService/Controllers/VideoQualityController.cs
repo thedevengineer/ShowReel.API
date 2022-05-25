@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ShowReel.Core.Repositories;
-using ShowReel.Data;
+using ShowReel.Core.Interface.Repositories;
 
 namespace ShowReel.RestService.Controllers
 {
@@ -8,10 +7,10 @@ namespace ShowReel.RestService.Controllers
     [Route("api/[controller]")]
     public class VideoQualityController : Controller
     {
-        private readonly IVideoQualityRepository _videoQualityRepository;
-        public VideoQualityController(IVideoQualityRepository videoQualityRepository)
+        private readonly IVideoQualityService _videoQualityService;
+        public VideoQualityController(IVideoQualityService videoQualityService)
         {
-            this._videoQualityRepository = videoQualityRepository;
+            this._videoQualityService = videoQualityService;
         }
 
         [HttpGet]
@@ -19,7 +18,7 @@ namespace ShowReel.RestService.Controllers
         {
             try
             {
-                var result = this._videoQualityRepository.GetAll();
+                var result = this._videoQualityService.GetAll();
                 return Ok(result);
             }
             catch (Exception ex)
@@ -36,7 +35,7 @@ namespace ShowReel.RestService.Controllers
 
             try
             {
-                var result = this._videoQualityRepository.Get(id);
+                var result = this._videoQualityService.Get(id);
                 return Ok(result);
             }
             catch (Exception ex)

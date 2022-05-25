@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.EntityFrameworkCore;
-using ShowReel.Core.Repositories;
-using ShowReel.Data;
-using ShowReel.Data.Repositories;
+﻿using ShowReel.Application;
+using ShowReel.Infrastructure;
 
 namespace ShowReel.RestService
 {
@@ -14,14 +11,14 @@ namespace ShowReel.RestService
         {
             Configuration = new ConfigurationBuilder().Build();
         }
-
+       
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IClipRepository, ClipRepository>();
-            services.AddScoped<IVideoQualityRepository, VideoQualityRepository>();
+            services.AddInfrastructureModule();
+            services.AddApplicationModule();
 
             //Todo: move to secret
-            services.AddDbContext<ShowReelDbContext>(options => options.UseSqlServer(@"Server=tcp:app-collection.database.windows.net,1433;Initial Catalog=ShowReelDb;Persist Security Info=False;User ID=mrkrmrez;Password={password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
+            services.AddDbContext(@"Server=tcp:app-collection.database.windows.net,1433;Initial Catalog=ShowReelDb;Persist Security Info=False;User ID=mrkrmrez;Password=p0wflbkEXRCopZJV56mY;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
             services.AddControllers();
             services.AddEndpointsApiExplorer();

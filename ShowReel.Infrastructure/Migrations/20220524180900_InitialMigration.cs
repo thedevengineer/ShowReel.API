@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace ShowReel.Data.Migrations
+namespace ShowReel.Infrastructure.Migrations
 {
     public partial class InitialMigration : Migration
     {

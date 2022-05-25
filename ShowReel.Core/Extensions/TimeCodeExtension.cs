@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShowReel.Core.App.Extensions
+namespace ShowReel.Core.Extensions
 {
     public static class TimeCodeExtension
     {

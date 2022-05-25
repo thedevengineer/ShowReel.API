@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShowReel.Core.App.Models
+namespace ShowReel.Core.Domain
 {
     public class NtscTimeCode : TimeCode
     {

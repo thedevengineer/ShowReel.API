@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ShowReel.Data\ShowReel.Data.csproj" />
+    <ProjectReference Include="..\ShowReel.Application\ShowReel.Application.csproj" />
+    <ProjectReference Include="..\ShowReel.Infrastructure\ShowReel.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

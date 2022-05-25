@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShowReel.Data
+namespace ShowReel.Infrastructure
 {
     public class ShowReelDbContext : DbContext
     {
@@ -14,11 +14,8 @@ namespace ShowReel.Data
         {
         }
 
-        protected ShowReelDbContext(DbContextOptions options) : base(options)
-        {
-        }
 
-        protected DbSet<Clip> Reels { get; set; }
+        protected DbSet<Clip> Clips { get; set; }
 
         protected DbSet<VideoQuality> VideoQualities { get; set; }
 

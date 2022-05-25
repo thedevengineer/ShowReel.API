@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ShowReel.Core.Repositories;
-using ShowReel.Data.Repositories;
+using ShowReel.Core.Interface.Services;
 
 namespace ShowReel.RestService.Controllers
 {
@@ -9,10 +8,10 @@ namespace ShowReel.RestService.Controllers
     [Route("api/[controller]")]
     public class ClipController : Controller
     {
-        private readonly IClipRepository _clipRepository;
-        public ClipController(IClipRepository clipRepository)
+        private readonly IClipService _clipService;
+        public ClipController(IClipService clipService)
         {
-            this._clipRepository = clipRepository;
+            this._clipService = clipService;
         }
 
         [HttpGet]
@@ -20,7 +19,7 @@ namespace ShowReel.RestService.Controllers
         {
             try
             {
-                var result = this._clipRepository.GetAll();
+                var result = this._clipService.GetAll();
                 return Ok(result);
             }
             catch (Exception ex)
@@ -37,7 +36,7 @@ namespace ShowReel.RestService.Controllers
 
             try
             {
-                var result = this._clipRepository.Get(id);
+                var result = this._clipService.Get(id);
                 return Ok(result);
             }
             catch (Exception ex)

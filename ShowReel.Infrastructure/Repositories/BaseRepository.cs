@@ -1,9 +1,8 @@
-﻿
-using Microsoft.EntityFrameworkCore;
-using ShowReel.Core.Repositories;
+﻿using Microsoft.EntityFrameworkCore;
+using ShowReel.Core.Interface.Repositories;
 using System.Linq.Expressions;
 
-namespace ShowReel.Data
+namespace ShowReel.Infrastructure.Repositories
 {
     public abstract class BaseRepository<TEntity> : IRepository<TEntity> where TEntity : class 
     {

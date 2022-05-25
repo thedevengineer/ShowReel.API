@@ -1,14 +1,14 @@
-﻿using ShowReel.Core.App.CustomException;
+﻿using ShowReel.Core.Exceptions;
 using System.Text.RegularExpressions;
 
 namespace ShowReel.Core.App.Domain
 {
     public abstract class TimeCode
     {
-        public int Hours { get;  set; }
-        public int Minutes { get;  set; }
-        public int Seconds { get;  set; }
-        public int Frames { get;  set; }
+        public int Hours { get; private set; }
+        public int Minutes { get; private set; }
+        public int Seconds { get; private set; }
+        public int Frames { get; private set; }
 
 
         public readonly int _timeMod = 60;
