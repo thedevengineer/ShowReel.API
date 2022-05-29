@@ -24,5 +24,10 @@ namespace ShowReel.Infrastructure.Repositories
         {
             return Context.Set<Clip>().Include(c => c.VideoQuality).Where(d => ids.Contains(d.Id));
         }
+
+        public Clip FindWithVideoQualityById(int id)
+        {
+            return Context.Set<Clip>().Include(c => c.VideoQuality).First(d => d.Id == id);
+        }
     }
 }

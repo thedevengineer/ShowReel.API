@@ -36,5 +36,10 @@ namespace ShowReel.Application.Services
         {
             return this._clipRepository.FindAllWithVideoQuality(ids);
         }
+
+        public Clip FindWithVideoQualityByIds(int id)
+        {
+            return this._clipRepository.FindWithVideoQualityById(id);
+        }
     }
 }

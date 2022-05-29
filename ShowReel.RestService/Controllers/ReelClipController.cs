@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ShowReel.Application.Models;
 using ShowReel.Core.Interface.Services;
 
 namespace ShowReel.RestService.Controllers
@@ -18,9 +17,16 @@ namespace ShowReel.RestService.Controllers
         [HttpPost]
         public IActionResult Calulate(int[] ClipIds)
         {
-            var clips = _clipService.FindAllWithVideoQuality(ClipIds).ToList();
+            try
+            {
+                var clips = _clipService.FindAllWithVideoQuality(ClipIds).ToList();
 
-            return Ok(_reelClipService.CalculateTimeCode(clips));
+                return Ok(_reelClipService.CalculateTimeCode(clips));
+            }
+            catch (Exception ex)
+            {
+                return  BadRequest(ex.Message);
+            }
         }
     }
 }

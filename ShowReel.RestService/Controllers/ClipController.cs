@@ -19,7 +19,7 @@ namespace ShowReel.RestService.Controllers
         {
             try
             {
-                var result = this._clipService.GetAll();
+                var result = this._clipService.GetAllWithVideoQuality();
                 return Ok(result);
             }
             catch (Exception ex)
@@ -36,7 +36,7 @@ namespace ShowReel.RestService.Controllers
 
             try
             {
-                var result = this._clipService.Get(id);
+                var result = this._clipService.FindWithVideoQualityByIds(id);
                 return Ok(result);
             }
             catch (Exception ex)

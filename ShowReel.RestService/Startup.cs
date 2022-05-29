@@ -1,5 +1,6 @@
 ﻿using ShowReel.Application;
 using ShowReel.Infrastructure;
+using System.Text.Json.Serialization;
 
 namespace ShowReel.RestService
 {
@@ -20,7 +21,9 @@ namespace ShowReel.RestService
             //Todo: move to secret
             services.AddDbContext(@"Server=tcp:app-collection.database.windows.net,1433;Initial Catalog=ShowReelDb;Persist Security Info=False;User ID=mrkrmrez;Password=p0wflbkEXRCopZJV56mY;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(options =>
+                 options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
         }
