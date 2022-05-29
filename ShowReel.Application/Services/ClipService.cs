@@ -22,6 +22,19 @@ namespace ShowReel.Application.Services
             return this._clipRepository.GetAll();
         }
 
+        public IEnumerable<Clip> FindAllByIds(int[] ids)
+        {
+            return this._clipRepository.Find(d => ids.Contains(d.Id));
+        }
 
+        public IEnumerable<Clip> GetAllWithVideoQuality()
+        {
+            return this._clipRepository.GetAllWithVideoQuality();
+        }
+
+        public IEnumerable<Clip> FindAllWithVideoQuality(int[] ids)
+        {
+            return this._clipRepository.FindAllWithVideoQuality(ids);
+        }
     }
 }

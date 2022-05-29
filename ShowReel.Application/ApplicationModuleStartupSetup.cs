@@ -10,6 +10,7 @@ namespace ShowReel.Application
         {
             services.AddScoped<IClipService, ClipService>();
             services.AddScoped<IVideoQualityService, VideoQualityService>();
+            services.AddScoped<IReelClipService, ReelClipService>();
         }
     }
 }

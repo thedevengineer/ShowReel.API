@@ -4,5 +4,8 @@ namespace ShowReel.Core.Interface.Repositories
 {
     public interface IClipRepository : IRepository<Clip>
     {
+        IEnumerable<Clip> FindAllByIds(int[] ids);
+        IEnumerable<Clip> GetAllWithVideoQuality();
+        IEnumerable<Clip> FindAllWithVideoQuality(int[] ids);
     }
 }
