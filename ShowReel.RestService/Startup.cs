@@ -15,6 +15,15 @@ namespace ShowReel.RestService
        
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.WithOrigins("http://localhost:3000")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod());
+            });
+
+
             services.AddInfrastructureModule();
             services.AddApplicationModule();
 
@@ -22,7 +31,7 @@ namespace ShowReel.RestService
             services.AddDbContext(@"Server=tcp:app-collection.database.windows.net,1433;Initial Catalog=ShowReelDb;Persist Security Info=False;User ID=mrkrmrez;Password=p0wflbkEXRCopZJV56mY;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
             services.AddControllers().AddJsonOptions(options =>
-                 options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+                 options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
@@ -35,7 +44,7 @@ namespace ShowReel.RestService
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            app.UseCors("CorsPolicy");
             app.UseRouting();
             app.UseHttpsRedirection();
             app.UseStaticFiles();

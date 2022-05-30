@@ -12,7 +12,6 @@ namespace ShowReel.Core.Domain
         public string Standard { get; private set; }
         public string Definition { get; private set; }
 
-        public ICollection<Clip> Reels { get; private set; }
 
         public VideoQuality(string standard, string definition, int id)
         {
