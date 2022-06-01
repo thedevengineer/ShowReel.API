@@ -18,7 +18,7 @@ namespace ShowReel.RestService
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
-                    builder => builder.WithOrigins("http://localhost:3000")
+                    builder => builder.WithOrigins("http://localhost:3000", "https://green-smoke-0cc6ae700.1.azurestaticapps.net")
                     .AllowAnyHeader()
                     .AllowAnyMethod());
             });

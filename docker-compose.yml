@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  showreel.restservice:
+    image: ${DOCKER_REGISTRY-}showreelrestservice
+    build:
+      context: .
+      dockerfile: ShowReel.RestService/Dockerfile
